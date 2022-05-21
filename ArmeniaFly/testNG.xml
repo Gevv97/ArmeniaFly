@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" parallel="tests">
+    <test thread-count="5" name="Test1">
+        <parameter name ="browserType" value="chrome"/>
+        <classes>
+            <class name="com.armeniafly.TestScripts.VerifySearchFlightTest"/>
+        </classes>
+    </test>
+
+    <test thread-count="5" name="Test2">
+        <parameter name ="browserType" value="chrome"/>
+        <classes>
+            <class name="com.armeniafly.TestScripts.VerifyModifySearchTest"/>
+        </classes>
+    </test>
+
+    <test thread-count="5" name="Test3">
+        <parameter name ="browserType" value="chrome"/>
+        <classes>
+            <class name="com.armeniafly.TestScripts.VerifyEconomyFlightsTest"/>
+        </classes>
+    </test>
+
+    <test thread-count="5" name="Test4">
+        <parameter name ="browserType" value="chrome"/>
+        <classes>
+            <class name="com.armeniafly.TestScripts.VerifyStandardEconomyFlightTest"/>
+        </classes>
+    </test>
+
+    <test thread-count="5" name="Test5">
+        <parameter name ="browserType" value="chrome"/>
+        <classes>
+            <class name="com.armeniafly.TestScripts.VerifyFlexiEconomyFlightTest"/>
+        </classes>
+    </test>
+
+    <test thread-count="5" name="Test6">
+        <parameter name ="browserType" value="chrome"/>
+        <classes>
+            <class name="com.armeniafly.TestScripts.VerifyPremiumEconomyFlightTest"/>
+        </classes>
+    </test>
+
+    <test thread-count="5" name="Test7">
+        <parameter name ="browserType" value="chrome"/>
+        <classes>
+            <class name="com.armeniafly.TestScripts.VerifyFlightsTotalCalculationTest"/>
+        </classes>
+    </test>
+
+</suite>
